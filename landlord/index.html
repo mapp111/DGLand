@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Landlord</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
+<head>
+  <title>Landlord</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.core.css" rel="stylesheet">
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <div class="input-box">
+    <div class="toolbar">
+      <button id="paste-button" class="toolbar-button">Ctrl+V</button>
+      <button id="send-button" class="toolbar-button">Gửi</button>
+    </div>
+    <div id="input">
+      <p>Core build with no theme, formatting, non-essential modules</p>
+    </div>
+  </div>
+  <div id="output">
+    <h2>Kết quả</h2>
+    <div id="result"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.core.js"></script>
+</body>
+
 </html>
