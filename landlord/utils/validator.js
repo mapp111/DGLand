@@ -1,4 +1,12 @@
-export function ValidateInput(data) {
+export function validateData(data){
+  if(!validateInput(data)){
+    return false;
+  }
+  // Additional validation logic can be added here
+  return true;
+}
+
+function validateInput(data) {
   if (!data.collaborator) {
     alert("Collaborator is required.");
     return false;
